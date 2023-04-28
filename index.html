@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Cheatsheet</title>
+        <link rel="stylesheet" href="./resources/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+           <h1>Cheatsheet for CSS Syntax and Selectors</h1>
+        </header> 
+        <main>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Syntax/Selector</th>
+                        <th>Description/Explanation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="code">&lt;link&gt;</span></td>
+                        <td>Connect CSS file with HTML:
+                            <br><span class="code">&lt;link href="./path/to/stylesheet/style.css" rel="stylesheet" type="text/css"&gt;</span></td>
+                    </tr>
+                    <tr>
+                        <td>Options for writing CSS</td>
+                        <td>1.) Seperate file (use <span class="code">&lt;link&gt;</span> in <span class="code">&lt;head&gt;</span>, common practice) 
+                            <br>2.) Write CSS in HTML file (use <span class="code">&lt;style&gt;</span> in <span class="code">&lt;head&gt;</span>)
+                            <br>3.) Inline styles (use <span class="code">'style'</span> attribute inside an element)</td>
+                    </tr>
+                    <tr>
+                        <td><span class="code">p</span></td>
+                        <td>The type selector selects all <span class="code">&lt;p&gt;</span> elements</td>
+                    </tr>
+                    <tr>
+                        <td><span class="code">.column</span></td>
+                        <td>Selects all elements with <span class="code">class:'column'</span>.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="code">#first-item</span></td>
+                        <td>Selects element with <span class="code">id='first-item'</span>.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="code">h1, h2</span></td>
+                        <td>Seperation with a comma applies the same CSS rule to multiple elements.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="code">h3.section</span></td>
+                        <td>Chaining selectors (selects <span class="code">&lt;h3&gt;</span> elements with the section class)</td>
+                    </tr>
+                    <tr>
+                        <td><span class="code">&lt;div class='a b c'&gt;&lt;/div&gt;</span></td>
+                        <td>HTML attributes can have multiple values. Values are seperated with a space. The classes of the <span class="code">&lt;div&gt;</span> element are a, b, and c.</td>
+                    </tr>
+                    <tr>
+                        <td>Specificity</td>
+                        <td>ID is the most specific selector, followed by class, followed by type. If property values are in conflict, the selector with the highest specifity wins.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="code">section ol li</span></td>
+                        <td>The descendant selector targets all <span class="code">&lt;li&gt;</span> elements that are nested in <span class="code">&lt;ol&gt;</span> elements that are nested in <span class="code">&lt;section&gt;</span> elements.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </body>
+</html>
